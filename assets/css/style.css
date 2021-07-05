@@ -36,35 +36,8 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
     list-style: none;
     text-decoration: none;
 }
-/* GERAL */
-  
-/* HTML */
-html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
 
-/* HEADER */
-header{}
-/* HEADER */
-  
 
-/* FOOTER */
-footer{}
-/* FOOTER */
-
-  
-/* INICIAL */
-main{}
-/* INICIAL */
-  
-
-/* EXTRAS */
-
-/* para estilizar a scrollbar */
 ::-webkit-scrollbar{}
 ::-webkit-scrollbar-button{}
 ::-webkit-scrollbar-track{}
@@ -74,9 +47,83 @@ main{}
 ::-webkit-resizer{}
 /* EXTRAS */
   
-
+:root{
+    --larguraPadraoMobile : 95vw;
+}
 /* MEDIA QUERIES */
-@media screen and (min-width: 400px){}
+@media screen and (min-width: 400px){
+    header{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+    .photo{
+        display: flex;
+        margin: 0 auto;
+        width: var(--larguraPadraoMobile);
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .photo figure figcaption{
+        margin-left:5%;
+        font-weight:600;
+    }
+    .photo-perfil{
+        max-width: 150px;
+        border-radius: 50%;
+    }
+    .about{
+        margin: 0 auto;
+        margin-top: 10px;
+        width: var(--larguraPadraoMobile) ;
+      
+        
+    }
+    .experience{
+        margin: 0 auto;
+        margin-top: 10px;
+        width: var(--larguraPadraoMobile) ;
+        
+        
+    }
+    .skills{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: var(--larguraPadraoMobile);       
+    }
+    .skill h3{
+        text-align: center;
+    }
+    .skill{
+        width: 50%;
+       
+        margin-right: 5px;
+        margin-left: 5px;
+        
+        
+    }
+    .projeto{
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        flex-direction: column;
+        width: var(--larguraPadraoMobile);
+       
+        
+    }
+    .projeto h3{
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        width: var(--larguraPadraoMobile);
+        justify-content: center;
+    }
+}
 
 @media screen and (min-width: 800px){}
 /* MEDIA QUERIES */
